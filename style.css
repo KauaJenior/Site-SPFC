@@ -1,0 +1,377 @@
+body,
+html {
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 0;
+    height: 100%;
+    min-height: 100%;
+
+}
+
+
+.header {
+    background-color: #cf2e2e;
+    width: auto;
+    height: 40px;
+    padding: 20px;
+    position: relative;
+
+
+
+}
+
+.navbar {
+    background-color: #333;
+    box-shadow: 0px 0px 3px #ccc;
+    overflow: hidden;
+    height: auto;
+   
+    
+
+}
+
+.navbar a {
+    float: right;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+
+.welc {
+    float: left;
+    visibility: visible;
+    position: relative;
+    animation-duration: 1.5s;
+    animation-name: welcome;
+    animation-direction: 1s;
+    opacity: 1;
+    justify-content: center;
+    display: flex;
+    padding-left: 20px;
+    color: white;
+    text-decoration: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+}
+
+@keyframes welcome {
+    from {
+        opacity: 0;
+        transform: translateX(-100%)
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: translateX(0%);
+    }
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black
+}
+
+.header img {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+
+
+}
+
+.header h1 {
+    margin-left: 50px;
+    margin-top: 5px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.list {
+    float: right;
+    margin-right: 50px;
+    background-color: whitesmoke;
+    padding-right: 50px;
+    border-radius: 10px;
+}
+
+.list li:hover {
+    background-color: #ddd;
+    color: black;
+    display: block;
+
+
+
+}
+
+.container {
+    margin-left: 15px;
+    margin-right: 5px;
+    display:grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+
+}
+
+.titulo {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+
+}
+
+.titulo:hover {
+    background-color: #ddd;
+    color: black;
+    display: block;
+
+}
+
+.logo {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.t {
+    display: flex;
+    justify-content: center;
+    margin-left: -360px;
+}
+
+.tp {
+    justify-content: center;
+    margin-left: 140px;
+}
+
+
+
+.camisas {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    transition: trasform 0.3;
+    background-color: #edeef0;
+    width: 180px;
+    padding-left: 14px;
+    margin-left: 5px;
+    border-radius: 10px;
+
+}
+
+.camisas:hover {
+    background-color: #ddd;
+    color: black;
+    display: block;
+}
+
+.camisa {
+    max-width: 100px;
+    max-height: 100px;
+    transition: transform 0.3s;
+
+}
+
+.camisa:hover {
+    transform: scale(2);
+
+}
+
+.cont {
+    margin-left: 15px;
+    margin-right: 5px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+
+}
+
+.est {
+    float: right;
+    margin-top: -305px;
+    background-color: whitesmoke;
+    padding-right: 50px;
+    margin-right: 50px;
+    padding-left: 40px;
+    padding-bottom: 50px;
+    width: 205px;
+    border-radius: 10px;
+
+}
+
+.est td {
+    padding-left: 15px;
+
+}
+
+.cont {
+    margin-left: 150px;
+    margin-right: 5px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+
+
+}
+
+.list2 {
+    float: left;
+    margin-left: 150px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.l {
+    background-color: #ccc;
+}
+
+.tx {
+    text-decoration: none;
+    margin-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.stadium_name {
+    visibility: visible;
+    animation-duration: 1.5s;
+    animation-name: anima;
+    opacity: 1;
+    justify-content: center;
+    display: flex;
+
+}
+
+
+@keyframes anima {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 100%, 0);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+.gallery {
+
+    float: left;
+    display: block;
+    margin: 5px;
+    padding-top: 5px;
+    padding-left: 20px;
+    padding-bottom: 5px;
+
+
+}
+
+.gallery img {
+    width: 400px;
+    height: 250px;
+    border-radius: 20px;
+
+}
+
+.gallery img:hover {
+    border: 1px solid black;
+}
+
+.dados {
+    padding-left: 20px;
+    background-color: #ccc;
+    border-radius: 20px;
+    margin-left: 20px;
+    padding-top: 20px;
+    margin-top: 20px;
+    margin-right: 20px;
+    padding-bottom: 20px;
+}
+
+.informacoes {
+    display: none;
+    text-align: left;
+    background-color: #ccc;
+    margin-top: -20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding-bottom: 5px;
+
+
+}
+
+.informacoes p {
+    color: black;
+    margin-left: 8px;
+}
+
+.informacoes h2 {
+    color: #000000;
+    margin-left: 8px;
+}
+
+.informacoes h3 {
+    color: #000;
+    margin-left: 8px;
+}
+
+.informacoes h4 {
+    color: #000;
+    margin-left: 8px;
+}
+
+.informacoes ul {
+    color: #000;
+    margin-left: 8px;
+}
+
+.informacoes ul {
+    color: #000;
+    margin-left: 8px;
+}
+
+.conteudo {
+    margin-top: 300px;
+    text-align: center;
+    color: white;
+    background-color: #000000;
+    width: 500px;
+    border-radius: 20px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    padding-top: 0.1px;
+
+}
+
+.spec {
+    justify-content: center;
+    margin: auto;
+    width: auto;
+    padding-top: 1px;
+    cursor: pointer;
+    background-color: black;
+    text-decoration: none;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+}
+
+.spec hr {
+    border-radius: 1px;
+}
+
+.info {
+    background-color: white;
+    width: 40%;
+    margin: auto;
+    padding-bottom: 100px;
+}
